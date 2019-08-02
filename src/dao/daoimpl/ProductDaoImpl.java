@@ -10,6 +10,10 @@ import java.util.List;
 import entity.Product;
 import entity.UserAccount;
 
+/**
+ * @author HQTrung
+ *
+ */
 public class ProductDaoImpl {
 	public static UserAccount findUser(Connection conn, //
 			String userName, String password) throws SQLException {
@@ -33,6 +37,16 @@ public class ProductDaoImpl {
 		return null;
 	}
 
+	/**
+	 * description: .
+	 * author: HQTrung
+	 * create: 2:03:11 PM
+	 * update: 2:03:11 PM
+	 * @param conn
+	 * @param userName
+	 * @return
+	 * @throws SQLException
+	 */
 	public static UserAccount findUser(Connection conn, String userName) throws SQLException {
 
 		String sql = "Select a.User_Name, a.Password, a.Gender from User_Account a "//
@@ -55,6 +69,15 @@ public class ProductDaoImpl {
 		return null;
 	}
 
+	/**
+	 * description: .
+	 * author: HQTrung
+	 * create: 2:03:18 PM
+	 * update: 2:03:18 PM
+	 * @param conn
+	 * @return
+	 * @throws SQLException
+	 */
 	public static List<Product> queryProduct(Connection conn) throws SQLException {
 		String sql = "Select a.Code, a.Name, a.Price from Product a ";
 
@@ -75,6 +98,16 @@ public class ProductDaoImpl {
 		return list;
 	}
 
+	/**
+	 * description: .
+	 * author: HQTrung
+	 * create: 2:03:22 PM
+	 * update: 2:03:22 PM
+	 * @param conn
+	 * @param code
+	 * @return
+	 * @throws SQLException
+	 */
 	public static Product findProduct(Connection conn, String code) throws SQLException {
 		String sql = "Select a.Code, a.Name, a.Price from Product a where a.Code=?";
 
@@ -92,6 +125,15 @@ public class ProductDaoImpl {
 		return null;
 	}
 
+	/**
+	 * description: .
+	 * author: HQTrung
+	 * create: 1:58:21 PM
+	 * update: 1:58:21 PM
+	 * @param conn
+	 * @param product
+	 * @throws SQLException
+	 */
 	public static void updateProduct(Connection conn, Product product) throws SQLException {
 		String sql = "Update Product set Name =?, Price=? where Code=? ";
 
@@ -103,6 +145,15 @@ public class ProductDaoImpl {
 		pstm.executeUpdate();
 	}
 
+	/**
+	 * description: .
+	 * author: HQTrung
+	 * create: 2:03:28 PM
+	 * update: 2:03:28 PM
+	 * @param conn
+	 * @param product
+	 * @throws SQLException
+	 */
 	public static void insertProduct(Connection conn, Product product) throws SQLException {
 		String sql = "Insert into Product(Code, Name,Price) values (?,?,?)";
 
@@ -115,6 +166,15 @@ public class ProductDaoImpl {
 		pstm.executeUpdate();
 	}
 
+	/**
+	 * description: .
+	 * author: HQTrung
+	 * create: 2:03:31 PM
+	 * update: 2:03:31 PM
+	 * @param conn
+	 * @param code
+	 * @throws SQLException
+	 */
 	public static void deleteProduct(Connection conn, String code) throws SQLException {
 		String sql = "Delete From Product where Code= ?";
 

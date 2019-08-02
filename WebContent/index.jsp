@@ -72,8 +72,8 @@
 					data-parent="#accordionSidebar">
 					<div class="bg-white py-2 collapse-inner rounded">
 						<h6 class="collapse-header">Custom Components:</h6>
-						<a class="collapse-item" href="buttons.html">Buttons</a> <a
-							class="collapse-item" href="cards.html">Cards</a>
+						<a class="collapse-item" href="asserts/buttons.html">Buttons</a> <a
+							class="collapse-item" href="asserts/cards.html">Cards</a>
 					</div>
 				</div></li>
 
@@ -87,10 +87,10 @@
 					aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
 					<div class="bg-white py-2 collapse-inner rounded">
 						<h6 class="collapse-header">Custom Utilities:</h6>
-						<a class="collapse-item" href="utilities-color.html">Colors</a> <a
-							class="collapse-item" href="utilities-border.html">Borders</a> <a
-							class="collapse-item" href="utilities-animation.html">Animations</a>
-						<a class="collapse-item" href="utilities-other.html">Other</a>
+						<a class="collapse-item" href="asserts/utilities-color.html">Colors</a> <a
+							class="collapse-item" href="asserts/utilities-border.html">Borders</a> <a
+							class="collapse-item" href="asserts/utilities-animation.html">Animations</a>
+						<a class="collapse-item" href="asserts/utilities-other.html">Other</a>
 					</div>
 				</div></li>
 
@@ -110,24 +110,25 @@
 					aria-labelledby="headingPages" data-parent="#accordionSidebar">
 					<div class="bg-white py-2 collapse-inner rounded">
 						<h6 class="collapse-header">Login Screens:</h6>
-						<a class="collapse-item" href="login.html">Login</a> <a
-							class="collapse-item" href="register.html">Register</a> <a
-							class="collapse-item" href="forgot-password.html">Forgot
+						<a class="collapse-item" href="asserts/login.html">Login</a> <a
+							class="collapse-item" href="asserts/register.html">Register</a> <a
+							class="collapse-item" href="asserts/forgot-password.html">Forgot
 							Password</a>
 						<div class="collapse-divider"></div>
 						<h6 class="collapse-header">Other Pages:</h6>
-						<a class="collapse-item" href="404.html">404 Page</a> <a
-							class="collapse-item" href="blank.html">Blank Page</a>
+						<a class="collapse-item" href="asserts/404.html">404 Page</a> <a
+							class="collapse-item" href="asserts/blank.html">Blank Page</a>
 					</div>
 				</div></li>
 
 			<!-- Nav Item - Charts -->
-			<li class="nav-item"><a class="nav-link" href="charts.html">
-					<i class="fas fa-fw fa-chart-area"></i> <span>Semaster Manage</span>
+			<li class="nav-item"><a class="nav-link" href="asserts/charts.html">
+					<i class="fas fa-fw fa-chart-area"></i> <span>Semaster
+						Manage</span>
 			</a></li>
 
 			<!-- Nav Item - Tables -->
-			<li class="nav-item"><a class="nav-link" href="tables.html">
+			<li class="nav-item"><a class="nav-link" href="asserts/tables.html">
 					<i class="fas fa-fw fa-table"></i> <span>Reports</span>
 			</a></li>
 

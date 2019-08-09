@@ -1,0 +1,51 @@
+.contact img,
+.contact h4,
+.contact address{
+  opacity: 0;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.contact img {
+  animation-name: cd-bounce-right;
+}
+
+.contact address, h4 {
+  animation-name: cd-bounce-left;
+}
+
+.contact img,
+.contact h4,
+.contact address {
+  animation-duration: 0.6s;
+}
+
+@keyframes cd-bounce-right {
+  0% {
+    opacity: .2;
+    transform: translateX(-200px);
+  }
+  60% {
+    opacity: .7;
+    transform: translateX(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes cd-bounce-left {
+  0% {
+    opacity: .2;
+    transform: translateX(200px);
+  }
+  60% {
+    opacity: .7;
+    transform: translateX(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

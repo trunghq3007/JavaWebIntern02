@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo1{
+    margin: 5px 0px 0px 140px;
+}
+
+.login{
+    line-height: 100px;
+    margin-right: 150px;
+    font-size: 17px;
+    color: orange; 
+}
+
+.a:hover{
+    cursor: pointer;
+}
+
+#header{
+    height: 120px;
+    border-bottom: 1px solid grey;
+}
+
+#header h4{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-right: 70px;
+}
+
+.background{ 
+    background: url("../img/—Pngtree—background materials for graduation ceremony_872509.jpg");    
+    height: 600px; 
+    position: relative;
+    overflow: hidden;
+    margin-bottom: -25px; 
+    background-position: center center;
+    background-size: cover;
+    transform:scale;
+}
+
+.background h1{
+    text-align: center;
+    line-height: 200px;
+    font-weight: bold;
+    font-size: 45px;
+    color: #290ffd47;
+}
+
+.list{
+    text-align: center;
+    color: #d24fa6bf;
+    margin-top: 70px;
+    font-weight: bold;
+}
+
+.step{
+    height: 400px;     
+}
+
+.step .a:hover .b{
+    cursor: pointer;
+    background-color: #8CB33E;
+}
+
+.step .a{
+    width: 270px;
+    height: 210px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 60px;
+}
+
+.step .b{
+    background-color: #d67676;
+    width: 270px;
+    height: 170px;
+}
+
+.step .c{
+    margin-top: 30px;
+    margin-left: 80px;
+    width: 40%;
+}
+
+#s1{
+    margin-left: 35px;
+    margin-top: 0;
+    width: 180px;
+    height: 180px;
+}
+
+.step_content{
+    margin-top: 20px;   
+}
+
+.step .d{
+    font-size: 20px;
+    color: rgb(236, 178, 18);   
+    font-weight: bold;
+}
+
+.step p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-left: 77px;
+    margin-top: 10px;
+}
+
+.benefit-1{
+    background-color: lavender;
+    height: 480px;
+}
+
+.line{
+    height: 20px;
+    background-color: #b0275adb;
+}
+
+.contact{
+    background-color: #b02d275e;
+    height: 300px;
+}
+
+.contact h4{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.contact address{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+}
+

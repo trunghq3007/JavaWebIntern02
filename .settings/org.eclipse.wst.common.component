@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="QLDHProject">
+    <wb-module deploy-name="QLDiemV2-1.1">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="QLDHProject"/>
-        <property name="java-output-path" value="/QLDHProject/build/classes"/>
+        <property name="context-root" value="QLDiemV2"/>
+        <property name="java-output-path" value="/QLDiemV2/build/classes"/>
     </wb-module>
 </project-modules>

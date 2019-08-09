@@ -1,3 +1,0 @@
-# QLDH
-
-QLDH

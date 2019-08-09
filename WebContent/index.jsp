@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CMC ACADEMY</title>
+    <title>CMC_ACADEMY</title>
     <link rel="stylesheet" href="./template/css/style.css">
 	<link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
 	<link rel="stylesheet" type="text/css" href="./template/css/intro address.css">

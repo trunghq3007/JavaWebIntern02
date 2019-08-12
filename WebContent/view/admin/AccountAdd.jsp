@@ -12,7 +12,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Trang Admin</title>
+<title>Thêm tài khoản</title>
 
 <!-- Custom fonts for this template-->
 <link href="template/vendor/fontawesome-free/css/all.min.css"
@@ -53,7 +53,7 @@
 								<div class="row">
 									<div class="col-md-3"> <label>Username</label> </div>
 									<div class="col-md-6">
-										<input type="text" class="form-control form-control-user" name="username" value="" required>
+										<input type="text" class="form-control" name="username" value="" required>
 									</div>
 									<div class="col-md-3"></div>
 								</div>
@@ -63,7 +63,7 @@
 								<div class="row">
 									<div class="col-md-3"> <label>Password</label> </div>
 									<div class="col-md-6">
-										<input type="password" class="form-control form-control-user" name="password1" value="" required>
+										<input type="password" class="form-control" name="password1" value="" required>
 									</div>
 									<div class="col-md-3"></div>
 								</div>
@@ -73,7 +73,7 @@
 								<div class="row">
 									<div class="col-md-3"> <label>Repeat Password</label> </div>
 									<div class="col-md-6">
-										<input type="password" class="form-control form-control-user" name="password2" value="" required>
+										<input type="password" class="form-control" name="password2" value="" required>
 									</div>
 									<div class="col-md-3"></div>
 								</div>

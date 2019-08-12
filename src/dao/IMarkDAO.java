@@ -24,9 +24,9 @@ public interface IMarkDAO {
 	boolean updateStatus(Mark m);
 
 	boolean cancelStatus(Mark m);
-	
-	
+
 	List<Mark> firstMarkList();
+
 	List<Mark> secondMarkList();
-	
+
 }

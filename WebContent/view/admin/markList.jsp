@@ -51,10 +51,6 @@
 
 				<!-- Begin Page Content -->
 				<div class="container-fluid">
-					<c:if test="${not empty message}">
-						<div class="alert alert-${alert} alert-dismissible fade show">
-							<button type="button" class="close" data-dismiss="alert">&times;</button>${message}</div>
-					</c:if>
 					<!-- DataTales Example -->
 					<div class="card shadow mb-4">
 						<div class="card-header py-3">
@@ -78,7 +74,7 @@
 											<th>Điểm lần 1</th>
 											<th>Điểm lần 2</th>
 											<th>Trạng thái</th>
-											<th>Hành động</th>
+											<th></th>
 										</tr>
 									</thead>
 									<tfoot>
@@ -91,7 +87,7 @@
 											<th>Điểm lần 1</th>
 											<th>Điểm lần 2</th>
 											<th>Trạng thái</th>
-											<th>Hành động</th>
+											<th></th>
 										</tr>
 									</tfoot>
 									<tbody>

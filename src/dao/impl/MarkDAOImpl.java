@@ -122,10 +122,10 @@ public class MarkDAOImpl implements IMarkDAO {
 		try {
 			PreparedStatement statement = connection.prepareStatement(sql);
 			statement.setFloat(1, Float.parseFloat(mark.getFirstMark()));
-			if (mark.getSecondMark() != null)
+			if (mark.getSecondMark() != "")
 				statement.setFloat(2, Float.parseFloat(mark.getSecondMark()));
 			else
-				statement.setString(2, "");
+				statement.setNull(2,  java.sql.Types.FLOAT);
 			statement.setString(3, mark.getStudent().getId());
 			statement.setString(4, mark.getSubject().getId());
 

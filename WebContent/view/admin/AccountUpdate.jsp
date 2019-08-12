@@ -14,7 +14,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Trang Admin</title>
+<title>Sửa tài khoản</title>
 
 <!-- Custom fonts for this template-->
 <link href="template/vendor/fontawesome-free/css/all.min.css"
@@ -60,7 +60,7 @@
 								<div class="row">
 									<div class="col-md-3"> <label>Student ID</label> </div>
 									<div class="col-md-6">
-										<input readonly="readonly" type="text" class="form-control form-control-user" name="student_id" value="<%= a.getStudent().getId() %>" required>
+										<input readonly="readonly" type="text" class="form-control" name="student_id" value="<%= a.getStudent().getId() %>" required>
 									</div>
 									<div class="col-md-3"></div>
 								</div>
@@ -70,7 +70,7 @@
 								<div class="row">
 									<div class="col-md-3"> <label>Username</label> </div>
 									<div class="col-md-6">
-										<input readonly="readonly" type="text" class="form-control form-control-user" name="username" value="<%= a.getUsername() %>" required>
+										<input readonly="readonly" type="text" class="form-control" name="username" value="<%= a.getUsername() %>" required>
 									</div>
 									<div class="col-md-3"></div>
 								</div>
@@ -80,7 +80,7 @@
 								<div class="row">
 									<div class="col-md-3"> <label>Password</label> </div>
 									<div class="col-md-6">
-										<input type="password" class="form-control form-control-user" name="password1" value="<%= a.getPassword() %>" required>
+										<input type="password" class="form-control" name="password1" value="<%= a.getPassword() %>" required>
 									</div>
 									<div class="col-md-3"></div>
 								</div>
@@ -90,7 +90,7 @@
 								<div class="row">
 									<div class="col-md-3"> <label>Repeat Password</label> </div>
 									<div class="col-md-6">
-										<input type="password" class="form-control form-control-user" name="password2" value="<%= a.getPassword() %>" required>
+										<input type="password" class="form-control" name="password2" value="<%= a.getPassword() %>" required>
 									</div>
 									<div class="col-md-3"></div>
 								</div>

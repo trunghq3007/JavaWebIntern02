@@ -120,7 +120,6 @@
 								<div class="col-md-6">
 									<select name="birth_place"
 										class="custom-select form-control">
-										
 										<option value="An Giang">An Giang
 										<option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu
 										<option value="Bắc Giang">Bắc Giang

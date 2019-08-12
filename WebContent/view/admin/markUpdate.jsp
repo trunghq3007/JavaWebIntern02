@@ -47,10 +47,6 @@
 
 				<!-- Begin Page Content -->
 				<div class="container-fluid">
-					<c:if test="${not empty message}">
-						<div class="alert alert-${alert} alert-dismissible fade show">
-							<button type="button" class="close" data-dismiss="alert">&times;</button>${message}</div>
-					</c:if>
 					<form class="user" action="admin-mark-update" method="post">
 						<div class="form-group">
 							<div class="row">
@@ -156,7 +152,7 @@
 								<div class="col-md-3"></div>
 							</div>
 						</div>
-						<p style="text-align: center; margin-top: 20px; color: red;">${tb15}</p>
+						<p style="text-align: center; margin-top: 20px; color: red;">${note}</p>
 					</form>
 
 

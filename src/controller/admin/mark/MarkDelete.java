@@ -2,7 +2,6 @@ package controller.admin.mark;
 
 import java.io.IOException;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -22,10 +21,9 @@ public class MarkDelete extends HttpServlet {
 			throws ServletException, IOException {
 		String studentId = request.getParameter("studentId");
 		String subjectId = request.getParameter("subjectId");
-		if (markDAO.delete(studentId, subjectId)) {
-			response.sendRedirect(request.getContextPath() + "/admin-mark-list?action=delete&alert=success");
-		} else
-			response.sendRedirect(request.getContextPath() + "/admin-mark-list?action=delete&alert=danger");
+		markDAO.delete(studentId, subjectId);
+		response.sendRedirect(request.getContextPath() + "/admin-mark-list");
+
 	}
 
 }

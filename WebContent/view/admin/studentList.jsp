@@ -78,7 +78,7 @@
 											<th class="th-sm">Ngày sinh</th>
 											<th class="th-sm">Nơi sinh</th>
 											<th class="th-sm">Lớp</th>
-											<th class="th-sm">Actions</th>
+											<th class="th-sm"></th>
 										</tr>
 									</thead>
 									<tbody>

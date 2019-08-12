@@ -14,6 +14,8 @@ import dao.impl.MarkDAOImpl;
 import entity.Mark;
 @WebServlet(urlPatterns = {"/admin-first-mark-list"})
 public class FirstMarkList extends HttpServlet {
+
+	private static final long serialVersionUID = 1L;
 	IMarkDAO MarkDAO = new MarkDAOImpl();
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

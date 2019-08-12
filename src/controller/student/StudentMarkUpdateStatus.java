@@ -31,7 +31,7 @@ public class StudentMarkUpdateStatus extends HttpServlet {
 			System.out.println(markDAO.cancelStatus(mark));
 		}
 
-		response.sendRedirect(request.getContextPath() + "/student-home");
+		response.sendRedirect(request.getContextPath() + "/student-mark");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)

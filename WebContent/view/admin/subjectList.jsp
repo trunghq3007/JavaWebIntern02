@@ -12,7 +12,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Trang Admin</title>
+<title>Danh sách môn học</title>
 
 <!-- Custom fonts for this template -->
 <link href="template/vendor/fontawesome-free/css/all.min.css"
@@ -51,21 +51,15 @@
 
 				<!-- Begin Page Content -->
 				<div class="container-fluid">
-					<!-- Page Heading -->
-					<div class="d-flex justify-content-between">
-						<h1 class="h3 mb-2 text-gray-800">Môn học</h1>
-						<p class="mb-4">Danh sách môn học</p>
-						<a class="btn btn btn-primary" href="admin-subject-add"> <i
-							class="fas fas fa-plus fa-fw mr-2"></i> Thêm môn học
-						</a>
-					</div>
-
-
-
 					<!-- DataTales Example -->
 					<div class="card shadow mb-4">
 						<div class="card-header py-3">
-							<h6 class="m-0 font-weight-bold text-primary">Dữ liệu</h6>
+							<h2 class="m-0 font-weight-bold text-primary">Bảng Môn Học</h2>
+							<div align="right" style="margin-bottom: -48px;">
+								<a href="admin-subject-add" class="btn btn-primary"
+									style="margin-right: 15px; margin-bottom: 38px"> Thêm môn học</a>
+							</div>
+
 						</div>
 						<div class="card-body">
 							<div class="table-responsive">
@@ -77,7 +71,7 @@
 											<th>Tên môn học</th>
 											<th>Số tín chỉ</th>
 											<th>Học kỳ</th>
-											<th>Hành động</th>
+											<th></th>
 										</tr>
 									</thead>
 									<tfoot>
@@ -86,7 +80,7 @@
 											<th>Tên môn học</th>
 											<th>Số tín chỉ</th>
 											<th>Học kỳ</th>
-											<th>Hành động</th>
+											<th></th>
 										</tr>
 									</tfoot>
 									<tbody>

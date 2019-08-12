@@ -12,7 +12,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Trang Admin</title>
+<title>Student</title>
 
 <!-- Custom fonts for this template -->
 <link href="template/vendor/fontawesome-free/css/all.min.css"

@@ -12,7 +12,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Scholarship</title>
+  <title>Học bổng</title>
 
   <!-- Custom fonts for this template -->
   <link href="template/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -62,22 +62,22 @@
                 <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
-                      <th>Strudent ID</th>
-                      <th>Name</th>                     
-                      <th>ClassID</th>
-                      <th>Semester</th>
-                      <th>Mark Avarage</th>                     
-                      <th>Scholarship</th>
+                      <th>Mã sinh viên</th>
+                      <th>Tên sinh viên</th>                     
+                      <th>Lớp</th>
+                      <th>Học kỳ</th>
+                      <th>Điểm trung bình</th>                     
+                      <th>Loại học bổng</th>
                     </tr>
                   </thead>
                   <tfoot>
                     <tr>
-                      <th>Strudent ID</th>
-                      <th>Name</th>
-                      <th>ClassID</th>
-                      <th>Semester</th>
-                      <th>Mark Avarage</th>                     
-                      <th>Scholarship</th>
+                     <th>Mã sinh viên</th>
+                      <th>Tên sinh viên</th>                     
+                      <th>Lớp</th>
+                      <th>Học kỳ</th>
+                      <th>Điểm trung bình</th>                     
+                      <th>Loại học bổng</th>
                     </tr>
                   </tfoot>
                   <tbody>                   

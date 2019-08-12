@@ -35,7 +35,7 @@
 			data-parent="#accordionSidebar">
 			<div class="bg-white py-2 collapse-inner rounded">
 				<h6 class="collapse-header">Quản lý về:</h6>
-				<a class="collapse-item" href="admin-account-list">Account</a>
+				<a class="collapse-item" href="admin-account-list">Tài khoản</a>
 				<a class="collapse-item" href="admin-subject-list">Môn học</a> <a
 					class="collapse-item" href="admin-student-list">Sinh viên</a> <a
 					class="collapse-item" href="admin-mark-list">Điểm</a>

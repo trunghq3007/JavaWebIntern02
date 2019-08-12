@@ -13,7 +13,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Repetition</title>
+<title>Lưu ban</title>
 
 <!-- Custom fonts for this template -->
 <link href="template/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"
@@ -68,22 +68,22 @@
 									cellspacing="0">
 									<thead>
 										<tr>
-											<th>Student ID</th>
-											<th>Name</th>
-											<th>ClassID</th>
-											<th>Class Name</th>
-											<th>Semester</th>
-											<th>Mark Avarage</th>
+											<th>Mã sinh viên</th>
+											<th>Tên sinh viên</th>
+											<th>Mã lớp</th>
+											<th>Tên lớp</th>
+											<th>Học kỳ</th>
+											<th>Điểm trung bình</th>
 										</tr>
 									</thead>
 									<tfoot>
 										<tr>
-											<th>Student ID</th>
-											<th>Name</th>
-											<th>ClassID</th>
-											<th>Class Name</th>
-											<th>Semester</th>
-											<th>Mark Avarage</th>
+											<th>Mã sinh viên</th>
+											<th>Tên sinh viên</th>
+											<th>Mã lớp</th>
+											<th>Tên lớp</th>
+											<th>Học kỳ</th>
+											<th>Điểm trung bình</th>
 										</tr>
 									</tfoot>
 									<tbody>

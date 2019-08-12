@@ -1,6 +1,7 @@
 package controller.admin.mark;
 
 import java.io.IOException;
+import java.util.regex.Pattern;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -40,21 +41,19 @@ public class MarkUpdate extends HttpServlet {
 		String subjectId = request.getParameter("subjectId");
 		String firstMark = request.getParameter("firstMark");
 		String secondMark = request.getParameter("secondMark");
-		Subject subject = new Subject();
-		subject.setId(subjectId);
-		Mark newMark;
-		boolean check = false;
-		if (secondMark == "") {
-			newMark = new Mark(new Student(studentId), subject, firstMark);
-			check = markDAO.updateFirstMark(newMark);
+
+		if (!Pattern.matches("^\\d$||^10$||^\\d\\.\\d$", firstMark) || !Pattern.matches("\\d||10||^\\d\\.\\d", secondMark)) {
+			request.setAttribute("note", "Điểm có giá trị từ 0 đến 10");
+			doGet(request, response);
 		} else {
+			Subject subject = new Subject();
+			subject.setId(subjectId);
+			Mark newMark;
 			newMark = new Mark(new Student(studentId), subject, firstMark, secondMark);
-			check = markDAO.updateMark(newMark);
+			markDAO.updateMark(newMark);
+			response.sendRedirect(request.getContextPath() + "/admin-mark-list");
+
 		}
-		if (check == true)
-			response.sendRedirect(request.getContextPath() + "/admin-mark-list?action=update&alert=success");
-		else
-			response.sendRedirect(request.getContextPath() + "/admin-mark-list?action=update&alert=danger");
 
 	}
 

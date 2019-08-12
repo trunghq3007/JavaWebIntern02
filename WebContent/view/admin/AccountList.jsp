@@ -14,7 +14,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Trang Admin</title>
+<title>Danh sách tài khoản</title>
 
 <!-- Custom fonts for this template -->
 <link href="template/vendor/fontawesome-free/css/all.min.css"
@@ -59,20 +59,15 @@
 
 				<!-- Begin Page Content -->
 				<div class="container-fluid">
-					<!-- Page Heading -->
-					<div class="d-flex justify-content-between">
-						<h1 class="h3 mb-2 text-gray-800">Danh sách tài khoản</h1>
-						<a class="btn btn btn-primary" href="admin-account-add"> <i
-							class="fas fas fa-plus fa-fw mr-2"></i> Thêm tài khoản
-						</a>
-					</div>
-
-
-
 					<!-- DataTales Example -->
 					<div class="card shadow mb-4">
 						<div class="card-header py-3">
-							<h6 class="m-0 font-weight-bold text-primary">Dữ liệu</h6>
+							<h2 class="m-0 font-weight-bold text-primary">Bảng Tài Khoản</h2>
+							<div align="right" style="margin-bottom: -48px;">
+								<a href="admin-account-add" class="btn btn-primary"
+									style="margin-right: 15px; margin-bottom: 38px"> Thêm tài khoản</a>
+							</div>
+
 						</div>
 						<div class="card-body">
 							<div class="table-responsive">
@@ -80,18 +75,18 @@
 									width="100%" cellspacing="0">
 									<thead>
 										<tr>
-											<th>Username</th>
-											<th>Student ID</th>
-											<th>Role</th>
-											<th>Hành động</th>
+											<th>Tên tài khoản</th>
+											<th>Mã sinh viên</th>
+											<th>Loại</th>
+											<th></th>
 										</tr>
 									</thead>
 									<tfoot>
 										<tr>
-											<th>Username</th>
-											<th>Student ID</th>
-											<th>Role</th>
-											<th>Hành động</th>
+											<th>Tên tài khoản</th>
+											<th>Mã sinh viên</th>
+											<th>Loại</th>
+											<th></th>
 										</tr>
 									</tfoot>
 									<tbody>

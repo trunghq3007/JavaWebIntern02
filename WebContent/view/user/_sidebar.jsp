@@ -12,14 +12,17 @@
 			<i class="fas fa-laugh-wink"></i>
 		</div>
 		<div class="sidebar-brand-text mx-3">
-			Xin chào<sup>2</sup>
+			STUDENT</sup>
 		</div>
 	</a>
 
 
 
+
+
 	<!-- Divider -->
 	<hr class="sidebar-divider d-none d-md-block">
+	<a class="collapse-item text-white text-center mb-5" style = "text-decoration: NONE; font-size: 18px"href="student-mark">Xem điểm</a>
 
 	<!-- Sidebar Toggler (Sidebar) -->
 	<div class="text-center d-none d-md-inline">

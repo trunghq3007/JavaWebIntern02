@@ -55,7 +55,7 @@ public class LoginServlet extends HttpServlet {
 
 				acc.setPassword(password);
 
-				String role = dao.getRoleOfUsername(username);
+				String role = dao.CheckPassword(username, password);
 				acc.setRole(role);
 
 				HttpSession ss = req.getSession();

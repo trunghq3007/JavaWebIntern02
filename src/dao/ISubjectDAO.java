@@ -12,4 +12,10 @@ public interface ISubjectDAO {
 	boolean update(Subject updatesubjectId);
 
 	boolean delete(String subjectId);
+	
+	Subject getById(String id);
+	
+	Subject getByName(String name);
+	
+	List<Subject> searchGanDung(String search);
 }

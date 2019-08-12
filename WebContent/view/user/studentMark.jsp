@@ -51,7 +51,72 @@
 
 				<!-- Begin Page Content -->
 				<div class="container-fluid">
-					
+					<!-- Page Heading -->
+					<!-- DataTales Example -->
+					<div class="card shadow mb-4">
+						<div class="card-header py-3">
+							<h2 class="m-0 font-weight-bold text-primary">Bảng Điểm Sinh Viên</h2>
+						</div>
+						<div class="card-body">
+							<div class="table-responsive">
+								<table class="table table-bordered text-center" id="dataTable"
+									width="100%" cellspacing="0">
+									<thead>
+										<tr>
+											<th>Học kỳ</th>
+											<th>Mã sinh viên</th>
+											<th>Tên sinh viên</th>
+											<th>Mã môn học</th>
+											<th>Tên môn học</th>
+											<th>Điểm lần 1</th>
+											<th>Điểm lần 2</th>
+											<th>Trạng thái</th>
+											<th>Hành động</th>
+										</tr>
+									</thead>
+									<tfoot>
+										<tr>
+											<th>Học kỳ</th>
+											<th>Mã sinh viên</th>
+											<th>Tên sinh viên</th>
+											<th>Mã môn học</th>
+											<th>Tên môn học</th>
+											<th>Điểm lần 1</th>
+											<th>Điểm lần 2</th>
+											<th>Trạng thái</th>
+											<th>Hành động</th>
+										</tr>
+									</tfoot>
+									<tbody>
+										<c:forEach items="${list}" var="mark">
+											<tr>
+												<td>${mark.subject.semester}</td>
+												<td>${mark.student.id}</td>
+												<td>${mark.student.name}</td>
+												<td>${mark.subject.id}</td>
+												<td>${mark.subject.name}</td>
+												<td>${mark.firstMark}</td>
+												<td>${mark.secondMark}</td>
+												<td>${mark.status}</td>
+												<td><div class="d-inline-flex">
+														<a class="btn btn btn-primary"
+															href="student-mark-update-status?studentId=${mark.student.id}&subjectId=${mark.subject.id}">
+															<!-- <i class="fas fas fa-edit fa-fw mr-2 text-gray-400"></i> -->
+															Phúc khảo
+														</a> <a class="btn btn btn-danger ml-2"
+															href="student-mark-update-status?studentId=${mark.student.id}&subjectId=${mark.subject.id}&action=cancel">
+															<!-- <i class="fas fas fa-minus fa-fw mr-2 text-gray-400"></i> -->
+															Hủy
+														</a>
+
+													</div></td>
+											</tr>
+										</c:forEach>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
 				</div>
 				<!-- /.container-fluid -->
 

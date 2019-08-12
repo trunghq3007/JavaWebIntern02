@@ -7,7 +7,10 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.sun.org.apache.bcel.internal.generic.Type;
+
 import dao.IMarkDAO;
+import entity.Class;
 import entity.Mark;
 import entity.Student;
 import entity.Subject;
@@ -236,13 +239,14 @@ public class MarkDAOImpl implements IMarkDAO {
 
 	@Override
 	public boolean cancelStatus(Mark m) {
-		String sql = "UPDATE mark\r\n" + "SET status=0\r\n" + "WHERE student_id=? AND subject_id=?";
+		String sql = "UPDATE mark\r\n" + "SET status=?\r\n" + "WHERE student_id=? AND subject_id=?";
 		Connection connection = DBUtils.getConnection();
 		PreparedStatement statement = null;
 		try {
 			statement = connection.prepareStatement(sql);
-			statement.setString(1, m.getStudent().getId());
-			statement.setString(2, m.getSubject().getId());
+			statement.setString(2, m.getStudent().getId());
+			statement.setString(3, m.getSubject().getId());
+			statement.setNull(1, java.sql.Types.NULL);
 			boolean rowUpdate = statement.executeUpdate() > 0;
 			statement.close();
 			connection.close();
@@ -274,4 +278,85 @@ public class MarkDAOImpl implements IMarkDAO {
 		}
 	}
 
+	@Override
+	public List<Mark> firstMarkList() {
+		List<Mark> list = new ArrayList<Mark>();
+		String sql = "SELECT * FROM mark \r\n" + "JOIN student ON student.id = mark.student_id\r\n"
+				+ "JOIN subject ON subject.id = mark.subject_id where mark.first_mark>=5";
+		Connection connection = DBUtils.getConnection();
+		try {
+			PreparedStatement ps = connection.prepareStatement(sql);
+			ResultSet rs = ps.executeQuery();
+			while (rs.next()) {
+				String studentId = rs.getString("student_id");
+				String studentName = rs.getString("student_name");
+				String classId=rs.getString("class_id");
+				String firstMark=rs.getString("first_mark");
+				Class class1= new Class();
+				class1.setId(classId);
+				Student student = new Student(studentId, studentName);
+				student.setClassroom(class1);
+
+				String semester=rs.getString("semester");
+				String subjectName=rs.getString("subject_name");
+				Subject subject= new Subject();
+				subject.setSemester(semester);
+				subject.setName(subjectName);
+				Mark mark = new Mark();
+				mark.setStudent(student);
+				mark.setSubject(subject);
+				mark.setFirstMark(firstMark);
+				list.add(mark);
+			}
+			rs.close();
+			ps.close();
+			connection.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return null;
+		}
+		return list;
+	}
+
+	@Override
+	public List<Mark> secondMarkList() {
+		List<Mark> list = new ArrayList<Mark>();
+		String sql = "SELECT * FROM mark \r\n" + "JOIN student ON student.id = mark.student_id\r\n"
+				+ "JOIN subject ON subject.id = mark.subject_id where mark.second_mark>=5";
+		Connection connection = DBUtils.getConnection();
+		try {
+			PreparedStatement ps = connection.prepareStatement(sql);
+			ResultSet rs = ps.executeQuery();
+			while (rs.next()) {
+				String studentId = rs.getString("student_id");
+				String studentName = rs.getString("student_name");
+				String classId=rs.getString("class_id");
+				String secondMark=rs.getString("second_mark");
+				Class class1= new Class();
+				class1.setId(classId);
+				Student student = new Student(studentId, studentName);
+				student.setClassroom(class1);
+
+				String semester=rs.getString("semester");
+				String subjectName=rs.getString("subject_name");
+				Subject subject= new Subject();
+				subject.setSemester(semester);
+				subject.setName(subjectName);
+				Mark mark = new Mark();
+				mark.setStudent(student);
+				mark.setSubject(subject);
+				mark.setSecondMark(secondMark);
+				list.add(mark);
+			}
+			rs.close();
+			ps.close();
+			connection.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return null;
+		}
+		return list;
+	}
+
+	
 }

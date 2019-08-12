@@ -12,7 +12,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Sửa điểm</title>
+<title>Trang Admin</title>
 
 <!-- Custom fonts for this template-->
 <link href="template/vendor/fontawesome-free/css/all.min.css"
@@ -46,62 +46,29 @@
 				<!-- End of Topbar -->
 
 				<!-- Begin Page Content -->
-				<div class="container-fluid">
-					<c:if test="${not empty message}">
-						<div class="alert alert-${alert} alert-dismissible fade show">
-							<button type="button" class="close" data-dismiss="alert">&times;</button>${message}</div>
-					</c:if>
-					<form class="user" action="admin-mark-update" method="post">
-						<div class="form-group">
-							<div class="row">
-								<div class="col-md-3">
-									<label>Mã sinh viên</label>
-								</div>
-								<div class="col-md-6">
-									<input type="text" class="form-control form-control-user"
-										name="studentId" value="${mark.student.id}"
-										readonly="readonly">
-								</div>
-								<div class="col-md-3"></div>
-							</div>
-
-						</div>
-						<div class="form-group">
-							<div class="row">
-								<div class="col-md-3">
-									<label>Tên sinh viên</label>
-								</div>
-								<div class="col-md-6">
-									<input type="text" class="form-control form-control-user"
-										name="studentName" value="${mark.student.name}"
-										readonly="readonly">
-								</div>
-								<div class="col-md-3"></div>
-							</div>
-
-						</div>
+			<div class="container-fluid">
+				<form class="user" action="admin-subject-add" method="post">
 						<div class="form-group">
 							<div class="row">
 								<div class="col-md-3">
 									<label>Mã môn học</label>
 								</div>
 								<div class="col-md-6">
-									<input type="text" class="form-control form-control-user"
-										name="subjectId" value="${mark.subject.id}"
-										readonly="readonly">
+									<input type="text" class="form-control"
+										name="id" required>
 								</div>
 								<div class="col-md-3"></div>
 							</div>
 						</div>
+
 						<div class="form-group">
 							<div class="row">
 								<div class="col-md-3">
 									<label>Tên môn học</label>
 								</div>
 								<div class="col-md-6">
-									<input type="text" class="form-control form-control-user"
-										name="subjectName" value="${mark.subject.name}"
-										readonly="readonly">
+									<input type="text" class="form-control"
+										name="name" required>
 								</div>
 								<div class="col-md-3"></div>
 							</div>
@@ -109,68 +76,62 @@
 						<div class="form-group">
 							<div class="row">
 								<div class="col-md-3">
-									<label>Học kỳ</label>
+									<label>Số tín chỉ</label>
 								</div>
 								<div class="col-md-6">
-									<input type="text" class="form-control form-control-user"
-										name="semester" value="${mark.subject.semester}"
-										readonly="readonly">
+									<input type="text" class="form-control"
+										name="soTin" required>
 								</div>
 								<div class="col-md-3"></div>
 							</div>
+
 						</div>
 						<div class="form-group">
 							<div class="row">
 								<div class="col-md-3">
-									<label>Điểm lần 1</label>
+									<label>Kỳ học</label>
 								</div>
 								<div class="col-md-6">
-									<input type="text" class="form-control form-control-user"
-										name="firstMark" value="${mark.firstMark}" required>
+									<input type="text" class="form-control"
+										name="semester" required>
 								</div>
 								<div class="col-md-3"></div>
 							</div>
+
 						</div>
-						<div class="form-group">
-							<div class="row">
-								<div class="col-md-3">
-									<label>Điểm lần 2</label>
-								</div>
-								<div class="col-md-6">
-									<input type="text" class="form-control form-control-user"
-										name="secondMark" value="${mark.secondMark}">
-								</div>
-								<div class="col-md-3"></div>
-							</div>
-						</div>
+
 						<div class="form-group d-flex justify-content-center">
 							<div class="row">
 								<div class="col-md-3"></div>
 								<div class="col-md-6">
-									<button type="submit" name="action" value="update"
-										class="btn btn-primary">
-										<!-- <i class="fas fas fa-edit fa-fw mr-2 text-gray-400"></i> -->
-										Sửa
-									</button>
+									<button type="submit" name="action" value="add"
+										class="btn btn btn-primary ">Thêm</button>
 								</div>
 								<div class="col-md-3"></div>
 							</div>
+
+
 						</div>
-						<p style="text-align: center; margin-top: 20px; color: red;">${tb15}</p>
 					</form>
 
-
-
-
-					<!--THÊM NỘI DUNG VÀO ĐÂY-->
-					<!--THÊM NỘI DUNG VÀO ĐÂY-->
-					<!--THÊM NỘI DUNG VÀO ĐÂY-->
-					<!--THÊM NỘI DUNG VÀO ĐÂY-->
-					<!--THÊM NỘI DUNG VÀO ĐÂY-->
-
-
-
-
+			<!-- Kiểm tra nếu bị trùng -->
+				<c:if test="${errID>0}">
+					<p style="text-align: center; margin-top: 20px; color: red;">ID bị trùng</p>
+				</c:if>
+				
+				<c:if test="${errName>0}">
+					<p style="text-align: center; margin-top: 20px; color: red;">Tên bị trùng</p>
+				</c:if>
+				
+				<c:if test="${errSoTin>0}">
+				<p style="text-align: center; margin-top: 20px; color: red;">Số tín phải là số và trong khoảng 1-6</p>
+					
+				</c:if>
+				
+				<c:if test="${errSemester>0}">
+				<p style="text-align: center; margin-top: 20px; color: red;">Học kỳ phải là số</p>
+					
+				</c:if>
 
 				</div>
 				<!-- /.container-fluid -->

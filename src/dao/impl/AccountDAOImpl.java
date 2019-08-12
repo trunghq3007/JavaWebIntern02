@@ -5,11 +5,12 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
+import dao.IAccount;
 import entity.Account;
 import entity.Student;
 import utils.DBUtils;
 
-public class AccountDAOImpl {
+public class AccountDAOImpl implements IAccount {
 	private Connection conn;
 	
     public ArrayList<Account> getFullAccount(){

@@ -104,13 +104,11 @@
 								<div class="col-md-6">
 									<select name="role" class="custom-select form-control">
 											<% if(a.getRole().equals("admin")) { %>
-											    <option value="student">student</option>
 											    <option value="admin" selected="selected">admin</option>
 											<%} %>	
 											
 											<% if(a.getRole().equals("student")) { %>
-											    <option value="student" selected="selected">student</option>
-											    <option value="admin">admin</option>
+											    <option value="admin" selected="selected">admin</option>
 											<%} %>		
 									</select>
 								</div>

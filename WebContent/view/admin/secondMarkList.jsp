@@ -53,14 +53,9 @@
 				<div class="container-fluid">
 					<!-- Page Heading -->
 					<div class="d-flex justify-content-between">
-						<h1 class="h3 mb-2 text-gray-800">Môn học</h1>
-						<p class="mb-4">Danh sách môn học</p>
-						<a class="btn btn btn-primary" href="admin-subject-add"> <i
-							class="fas fas fa-plus fa-fw mr-2"></i> Thêm môn học
-						</a>
+						<h1 class="h3 mb-2 text-gray-800">Điểm thi</h1>
+						<p class="mb-4">Danh sách đỗ lần 2</p>
 					</div>
-
-
 
 					<!-- DataTales Example -->
 					<div class="card shadow mb-4">
@@ -73,42 +68,33 @@
 									width="100%" cellspacing="0">
 									<thead>
 										<tr>
-											<th>Mã môn học</th>
-											<th>Tên môn học</th>
-											<th>Số tín chỉ</th>
+											<th>Mã sinh viên</th>
+											<th>Tên sinh viên</th>
+											<th>Lớp</th>
 											<th>Học kỳ</th>
-											<th>Hành động</th>
+											<th>Tên môn học</th>
+											<th>Điểm</th>
 										</tr>
 									</thead>
 									<tfoot>
 										<tr>
-											<th>Mã môn học</th>
-											<th>Tên môn học</th>
-											<th>Số tín chỉ</th>
+											<th>Mã sinh viên</th>
+											<th>Tên sinh viên</th>
+											<th>Lớp</th>
 											<th>Học kỳ</th>
-											<th>Hành động</th>
+											<th>Tên môn học</th>
+											<th>Điểm</th>
 										</tr>
 									</tfoot>
 									<tbody>
-										<c:forEach items="${list}" var="subject">
+										<c:forEach items="${list}" var="mark">
 											<tr>
-												<td>${subject.id}</td>
-												<td>${subject.name}</td>
-												<td>${subject.numberOfCredits}</td>
-												<td>${subject.semester}</td>
-												<td><div class="d-inline-flex">
-														<a class="btn btn btn-primary"
-															href="admin-subject-update?id=${subject.id }">
-															<!-- <i class="fas fas fa-edit fa-fw mr-2 text-gray-400"></i> -->
-															Sửa
-														</a> <a class="btn btn btn-danger ml-2"
-															href="admin-subject-delete?id=${subject.id }">
-															<!-- <i class="fas fas fa-minus fa-fw mr-2 text-gray-400"></i> -->
-															Xóa
-														</a>
-
-													</div>
-												</td>
+												<td>${mark.student.id}</td>
+												<td>${mark.student.name}</td>
+												<td>${mark.student.classroom.id}</td>
+												<td>${mark.subject.semester}</td>
+												<td>${mark.subject.name}</td>
+												<td>${mark.secondMark}</td>
 											</tr>
 										</c:forEach>
 									</tbody>
@@ -153,5 +139,6 @@
 
 		<!-- Page level custom scripts -->
 		<script src="template/js/demo/datatables-demo.js"></script>
+		
 </body>
 </html>

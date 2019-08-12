@@ -30,6 +30,8 @@ public class StudentUpdate extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/html;charset=UTF-8");
+		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html");
 		PrintWriter printWriter = response.getWriter();
 

@@ -28,6 +28,8 @@ public class StudentAdd extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		response.setContentType("text/html;charset=UTF-8");
+		request.setCharacterEncoding("utf-8");
 		// Lay du lieu tu form nguoi dung
 		response.setContentType("text/html");
 		PrintWriter printWriter = response.getWriter();

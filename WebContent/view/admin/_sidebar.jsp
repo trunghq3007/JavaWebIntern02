@@ -12,7 +12,7 @@
 			<i class="fas fa-laugh-wink"></i>
 		</div>
 		<div class="sidebar-brand-text mx-3">
-			ADMIN<sup>2</sup>
+			Xin chào<sup>2</sup>
 		</div>
 	</a>
 
@@ -35,6 +35,7 @@
 			data-parent="#accordionSidebar">
 			<div class="bg-white py-2 collapse-inner rounded">
 				<h6 class="collapse-header">Quản lý về:</h6>
+				<a class="collapse-item" href="admin-account-list">Account</a>
 				<a class="collapse-item" href="admin-subject-list">Môn học</a> <a
 					class="collapse-item" href="admin-student-list">Sinh viên</a> <a
 					class="collapse-item" href="admin-mark-list">Điểm</a>
@@ -51,8 +52,8 @@
 			aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
 			<div class="bg-white py-2 collapse-inner rounded">
 				<h6 class="collapse-header">Thống kê về:</h6>
-				<a class="collapse-item" href="">Điểm thi lần 1</a> 
-					<a class="collapse-item" href="">Điểm thi lần 2</a>
+				<a class="collapse-item" href="utilities-color.html">Điểm thi lần 1</a> 
+					<a class="collapse-item" href="utilities-border.html">Điểm thi lần 2</a>
 					<a class="collapse-item" href="Repetition">Lưu Ban</a> 
 					<a class="collapse-item" href="Scholarship">Học bổng</a> 			
 			</div>

@@ -20,6 +20,14 @@ public class Mark {
 		this.status = status;
 	}
 
+	public Mark(Student student, Subject subject, String firstMark, String secondMark) {
+		super();
+		this.student = student;
+		this.subject = subject;
+		this.firstMark = firstMark;
+		this.secondMark = secondMark;
+	}
+
 	public Mark(Student student, Subject subject, String firstMark) {
 		super();
 		this.student = student;

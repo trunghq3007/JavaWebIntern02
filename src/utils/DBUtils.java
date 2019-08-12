@@ -10,7 +10,7 @@ public class DBUtils {
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 			String url = "jdbc:sqlserver://localhost:1433;databaseName=QLDiemSV";
 			String user = "sa";
-			String password = "1234";
+			String password = "12345678";
 			return DriverManager.getConnection(url, user, password);
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();

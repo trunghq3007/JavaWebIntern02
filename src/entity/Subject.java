@@ -15,11 +15,11 @@ public class Subject {
 		this.semester = semester;
 	}
 
-	public Subject(String id, String name, String numberOfCredits) {
+	public Subject(String id, String name, String semester) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.numberOfCredits = numberOfCredits;
+		this.semester = semester;
 	}
 
 	public Subject(String id, String name) {

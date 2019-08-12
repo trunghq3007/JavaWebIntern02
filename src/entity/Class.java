@@ -10,6 +10,13 @@ public class Class {
 	public Class() {
 		super();
 	}
+	
+	
+	public Class(String id) {
+		super();
+		this.id = id;
+	}
+
 
 	public Class(String id, String name, String course, String trainingType, String department) {
 		super();

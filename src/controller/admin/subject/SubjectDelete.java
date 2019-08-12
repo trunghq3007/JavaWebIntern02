@@ -20,6 +20,7 @@ public class SubjectDelete extends HttpServlet {
 		subjectDAOImpl= new SubjectDAOImpl();
 	}
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
 		String id= request.getParameter("id");
 		subjectDAOImpl.delete(id);
 		response.sendRedirect("/QLDiemV2/admin-subject-list");
